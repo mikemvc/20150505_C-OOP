@@ -16,5 +16,16 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString();
+            label2.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+        }
     }
 }
