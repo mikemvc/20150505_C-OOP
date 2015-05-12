@@ -37,5 +37,21 @@ namespace MessageBoxDemo
                         MessageBoxIcon.Question,
                         MessageBoxDefaultButton.Button2);
         }
+
+        // 關閉視窗事件
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Are you sure close form?",
+                        "Asking",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question,
+                        MessageBoxDefaultButton.Button2);
+            if (answer == System.Windows.Forms.DialogResult.Yes)
+                e.Cancel = false;
+            else
+                e.Cancel = true;
+
+        }
     }
 }
