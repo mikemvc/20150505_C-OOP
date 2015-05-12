@@ -16,5 +16,13 @@ namespace InputBox
         {
             InitializeComponent();
         }
+
+        // 按鈕點擊事件
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // 引用VB的方法
+            button1.Text = Microsoft.VisualBasic.Interaction.
+                InputBox("Please keyin a number:", "Asking", "75");
+        }
     }
 }
