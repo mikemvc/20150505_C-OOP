@@ -28,5 +28,14 @@ namespace MessageBoxDemo
                         "Asking",
                         MessageBoxButtons.YesNo);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure close form?",
+                        "Asking",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question,
+                        MessageBoxDefaultButton.Button2);
+        }
     }
 }
