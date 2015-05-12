@@ -36,6 +36,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +102,31 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "文字加圖片";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(45, 327);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 24);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "FileName";
+            // 
+            // textBox4
+            // 
+            this.textBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+            this.textBox4.Location = new System.Drawing.Point(199, 318);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(428, 33);
+            this.textBox4.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 532);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -130,6 +152,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
