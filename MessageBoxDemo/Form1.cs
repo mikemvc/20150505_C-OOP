@@ -21,5 +21,12 @@ namespace MessageBoxDemo
         {
             MessageBox.Show("Are you sure close form?");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure close form?",
+                        "Asking",
+                        MessageBoxButtons.YesNo);
+        }
     }
 }
