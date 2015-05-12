@@ -16,5 +16,16 @@ namespace FormStyle
         {
             InitializeComponent();
         }
+
+        // 視窗大小變更事件
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                //this.Visible = false;
+                this.Hide();
+                
+            }
+        }
     }
 }
