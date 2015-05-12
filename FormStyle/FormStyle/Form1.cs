@@ -27,5 +27,15 @@ namespace FormStyle
                 
             }
         }
+
+        // 點擊icon兩次事件
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //MessageBox.Show("test");
+            //this.Visible = true;
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.Activate();
+        }
     }
 }
