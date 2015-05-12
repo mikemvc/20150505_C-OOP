@@ -73,6 +73,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Visual C# 2013 基礎必修課程 筆記-20150505.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
