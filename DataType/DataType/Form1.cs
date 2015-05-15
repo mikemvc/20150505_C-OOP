@@ -47,7 +47,18 @@ namespace DataType
         private void button2_Click(object sender, EventArgs e)
         {
             // Reference Type
+            TPoint p1 = new TPoint { X = 100, Y = 200 };
+            p1.X = 201;
+            TPoint p2;
+            p2 = p1;
+            p2.X = 101;
+            button2.Text = p1.X.ToString();
 
+            int x = 100;
+            int y;
+            y = x;
+            y = 200;
+            button1.Text = x.ToString();
 
         }
 
