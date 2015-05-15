@@ -43,5 +43,18 @@ namespace DataType
             // int employeeMonthlySalary;
             #endregion
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Reference Type
+
+
+        }
+
+        public class TPoint
+        {
+            public int X;
+            public int Y;
+        }
     }
 }
