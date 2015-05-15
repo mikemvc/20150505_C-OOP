@@ -130,5 +130,12 @@ namespace DataType
             // 0.2 * 2 = 0.4 ... 0
             // ...
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int? x = null;
+            x = x + 1;
+            button7.Text = x.ToString();
+        }
     }
 }
