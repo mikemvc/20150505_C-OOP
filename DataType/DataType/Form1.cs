@@ -98,5 +98,12 @@ namespace DataType
             double result = Math.Floor(x);
             button4.Text = result.ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // float x = (float) 1234.5;
+            float x = 1234.5f;
+            button5.Text = x.ToString();
+        }
     }
 }
