@@ -149,5 +149,16 @@ namespace DataType
 
             button8.Text = result.ToString();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //               0 1 2 34567890
+            string sTeam1 = "洋基隊    NYY";
+            string sTeam2 = "釀酒人隊  MIL";
+            //               0 1 2 3 456
+
+            button9.Text = sTeam1.Substring(7, 3);
+            this.Text = sTeam2.Substring(6, 3);
+        }
     }
 }
