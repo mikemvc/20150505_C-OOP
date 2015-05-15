@@ -16,6 +16,11 @@ namespace DataType
         {
             InitializeComponent();
         }
+        public class TPoint
+        {
+            public int X;
+            public int Y;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -61,11 +66,29 @@ namespace DataType
             button1.Text = x.ToString();
 
         }
-
-        public class TPoint
+        private void button3_Click(object sender, EventArgs e)
         {
-            public int X;
-            public int Y;
+            int x = 0;
+
+            x = 3;
+
+            x = (int)4.1;  // 4
+            x = (int)5.999;  // 5
+
+            // VB:
+            // Dim x as Integer
+            // C#:
+            // int x;
+            // int or Integer => System.Int32
+            x = Convert.ToInt32(6.4);  // 6
+            x = Convert.ToInt32(7.5);  // 8
+            x = Convert.ToInt32(18.5);  // 18
+            // 四捨六入五成雙
+            // 1234-5-6789
+
+            double y = Math.Round(18.5, 0, MidpointRounding.AwayFromZero);
+
+            button3.Text = y.ToString();
         }
     }
 }
