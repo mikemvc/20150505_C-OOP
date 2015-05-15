@@ -9,3 +9,8 @@ https://github.com/mikemvc/20150505_CSharpOOP/tree/20150505<br />
 https://github.com/mikemvc/20150505_CSharpOOP/tree/20150507<br />
 課程重點:Form的Style與基本屬性，InputBox專案中引用VB的DLL，<br />
 MessageBox專案的方法多載、TextBox的操作與應用<br />
+
+2015/05/12 資料型態與變數宣告<br />
+https://github.com/mikemvc/20150505_CSharpOOP/tree/20150512_DataType<br />
+課程重點:各種資料型態(string, int, double, decimal, float)，<br />
+變數的宣告，以及Math的部分方法使用<br />
