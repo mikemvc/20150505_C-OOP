@@ -105,5 +105,30 @@ namespace DataType
             float x = 1234.5f;
             button5.Text = x.ToString();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            double x = 0.0001;
+            double result = 0;
+            for (int i = 1; i <= 10000; i++)
+            {
+                result = result + x;
+            }
+
+            button6.Text = result.ToString();
+
+            // (0.25)10 ==> (?????)2
+            // 0.25 * 2 = 0.5 ... 0
+            // 0.5 * 2  = 1.0 ... 1  ==> (0.01)2
+
+            // (0.1)10 ==> (????)2
+            // 0.1 * 2 = 0.2 ... 0
+            // 0.2 * 2 = 0.4 ... 0
+            // 0.4 * 2 = 0.8 ... 0
+            // 0.8 * 2 = 1.6 ... 1
+            // 0.6 * 2 = 1.2 ... 1
+            // 0.2 * 2 = 0.4 ... 0
+            // ...
+        }
     }
 }
