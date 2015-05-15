@@ -19,6 +19,8 @@ namespace DataType
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Value Type
+
             // 變數宣告
             int x = 100;
             int y;
