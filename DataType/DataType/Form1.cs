@@ -187,5 +187,17 @@ namespace DataType
             char c = (char)i;
             textBox1.Text = c.ToString();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            //string s = "ABC";
+            //char c = s[0];
+            //button11.Text = Convert.ToInt32(c).ToString();
+
+            string s1 = "ABC";
+            string s2 = "XYZ";
+
+            button11.Text = s1 + s2;
+        }
     }
 }
