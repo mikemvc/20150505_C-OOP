@@ -199,5 +199,18 @@ namespace DataType
 
             button11.Text = s1 + s2;
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            // double result = 3 + 2;  // 5
+            // double result = 3 - 2;  // 1
+            // double result = 3 * 2;  // 6
+            // double result = 3 / 2;  // 1
+            // double result = 3 / (2 * 1.0);  // 1.5
+            // double result = 3 / Convert.ToDouble(2);
+            double result = 5 % 2;
+
+            button12.Text = result.ToString();
+        }
     }
 }
