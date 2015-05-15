@@ -90,5 +90,13 @@ namespace DataType
 
             button3.Text = y.ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double x = 2.9234;
+            // Math.Ceiling
+            double result = Math.Floor(x);
+            button4.Text = result.ToString();
+        }
     }
 }
