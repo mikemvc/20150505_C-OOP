@@ -137,5 +137,17 @@ namespace DataType
             x = x + 1;
             button7.Text = x.ToString();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            decimal x = 0.0001m;
+            decimal result = 0;
+            for (int i = 1; i <= 10000; i++)
+            {
+                result = result + x;
+            }
+
+            button8.Text = result.ToString();
+        }
     }
 }
