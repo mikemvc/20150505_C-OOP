@@ -212,5 +212,24 @@ namespace DataType
 
             button12.Text = result.ToString();
         }
+        bool test()
+        {
+            this.Text = DateTime.Now.ToString();
+            return true;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            int x = 3;
+            //if (x > 100  && test() ) // 且
+            //    button13.Text = "Yes";
+            //else
+            //    button13.Text = "No";
+
+            if (x > 100 & test()) // 且
+                button13.Text = "Yes";
+            else
+                button13.Text = "No";
+        }
     }
 }
