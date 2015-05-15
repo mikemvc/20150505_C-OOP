@@ -160,5 +160,32 @@ namespace DataType
             button9.Text = sTeam1.Substring(7, 3);
             this.Text = sTeam2.Substring(6, 3);
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //char c = 'A';
+            //int i = (int)c;
+            //button10.Text = i.ToString();
+
+            //int i = 65;
+            //char c = (char)i;
+            //button10.Text = c.ToString();
+
+            //char c = '錢';
+            //int i = (int)c;
+            //textBox1.Text = i.ToString(); // 37666
+
+            //int i = 37666;
+            //char c = (char)i;
+            //textBox1.Text = c.ToString();
+
+            //char c = '錢';
+            //int i = (int)c;
+            //textBox1.Text = i.ToString("x");  // 0x9322
+
+            int i = 0x9322; ;
+            char c = (char)i;
+            textBox1.Text = c.ToString();
+        }
     }
 }
