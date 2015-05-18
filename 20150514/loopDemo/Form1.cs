@@ -89,5 +89,17 @@ namespace loopDemo
             }
             button5.Text = result.ToString();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int result = 0;
+            int i = 0;
+            while (i < 10)
+            {
+                i++;
+                result = result + i;  // 0 + 1 + 2 + 3 + ...
+            }
+            button6.Text = result.ToString();
+        }
     }
 }
