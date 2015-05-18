@@ -31,5 +31,14 @@ namespace StringFormat
             result = string.Format("({0}, {1})", x, y);
             button1.Text = result;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int i = 3;      // "003"
+            // int i = 32;  // "032"
+            // button2.Text = (i + 1000).ToString().Substring(1, 3);
+
+            button2.Text = string.Format("{0:D3}", i);
+        }
     }
 }
