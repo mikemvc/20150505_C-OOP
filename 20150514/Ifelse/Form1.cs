@@ -37,5 +37,13 @@ namespace Ifelse
             //    button1.Text = "NO";
             #endregion
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (checkBox1.Checked)
+                e.Cancel = false;
+            else
+                e.Cancel = true;            
+        }
     }
 }
