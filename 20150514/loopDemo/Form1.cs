@@ -23,5 +23,12 @@ namespace loopDemo
             string sUserKeyin = textBox1.Text;
             listBox1.Items.Add(sUserKeyin);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items[0] = "AAA";
+            listBox1.Items.Remove("C");
+
+        }
     }
 }
