@@ -63,5 +63,17 @@ namespace Ifelse
             // 將視窗標題設定為現在的座標
             this.Text = string.Format("({0}, {1})", e.X, e.Y);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (rdoA.Checked)
+                button5.Text = "A";
+
+            if (rdoB.Checked)
+                button5.Text = "B";
+
+            if (rdoC.Checked)
+                button5.Text = "C";
+        }
     }
 }
