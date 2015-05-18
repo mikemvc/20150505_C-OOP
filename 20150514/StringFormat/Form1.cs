@@ -47,5 +47,12 @@ namespace StringFormat
             // button3.Text = string.Format("{0:C}", i);
             button3.Text = string.Format("{0:N4}", i);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int i = 15;
+            // button4.Text = i.ToString();
+            button4.Text = i.ToString("x");  // f
+        }
     }
 }
