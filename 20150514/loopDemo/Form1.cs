@@ -39,12 +39,19 @@ namespace loopDemo
         private void button3_Click(object sender, EventArgs e)
         {
             // for的變數i也可以設定在外面，但是不建議這麼做
-            int i = 1;
-            for (i = 1; i <= 9; i++)
-            {
+            //int i = 1;
+            //for (i = 1; i <= 9; i++)
+            //{
 
+            //}
+            //button3.Text = i.ToString();
+
+            for (int i = 1; i <= 9; i++)
+            {
+                if (i == 4)
+                    continue;
+                listBox1.Items.Add(i);
             }
-            button3.Text = i.ToString();
         }
     }
 }
