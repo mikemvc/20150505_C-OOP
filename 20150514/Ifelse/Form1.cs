@@ -40,10 +40,16 @@ namespace Ifelse
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (checkBox1.Checked)
-                e.Cancel = false;
-            else
-                e.Cancel = true;            
+            //if (checkBox1.Checked)
+            //    e.Cancel = false;
+            //else
+            //    e.Cancel = true;
+
+            // 三元表示法
+            // (true / false) ? xxx : yyy;
+            e.Cancel = (checkBox1.Checked) ? false : true;
+
+            
         }
     }
 }
