@@ -122,15 +122,26 @@ namespace loopDemo
             //listBox1.Items.Add("****");
             //listBox1.Items.Add("*****");
             
-            // for loop --的寫法            
+            // for loop ++的寫法
+            string start = "";
             for (int i = 1; i<=5;i++)
-            {
-                string start = "";
-                for(int j = i;j> 0;j--)
+            {                
+                for(int j = i;j<=i;j++)
                 {
                     start += "*";
                 }
                 listBox1.Items.Add(start);
+            }
+
+            // for loop --的寫法
+            for (int x = 4;x>0;x--)
+            {
+                string end = "";
+                for (int y=x;y>0;y--)
+                {
+                    end += "*";
+                }
+                listBox1.Items.Add(end);
             }
         }
     }
