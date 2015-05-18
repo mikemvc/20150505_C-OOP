@@ -53,5 +53,29 @@ namespace loopDemo
                 listBox1.Items.Add(i);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int i = 1;
+            while (i <= 9)
+            {
+                if (i == 4)
+                {
+                    i++;
+                    continue;
+                }
+                //if (i == 4)
+                //    break;
+                listBox1.Items.Add(i);
+                i += 1; // i++;
+            }
+            listBox1.Items.Add("End");
+
+            #region 示範
+            //int employeeMonthlySalary = 80000;
+            //employeeMonthlySalary = employeeMonthlySalary + 10000;
+            //employeeMonthlySalary += 10000;
+            #endregion
+        }
     }
 }
