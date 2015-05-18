@@ -77,5 +77,17 @@ namespace loopDemo
             //employeeMonthlySalary += 10000;
             #endregion
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int result = 0;
+            int i = 1;
+            while (i <= 10)
+            {
+                result = result + i;  // 0 + 1 + 2 + 3 + ...
+                i++;
+            }
+            button5.Text = result.ToString();
+        }
     }
 }
