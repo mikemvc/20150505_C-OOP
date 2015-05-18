@@ -51,5 +51,11 @@ namespace Ifelse
 
             e.Cancel = !checkBox1.Checked;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // sender 是委派涵式所傳遞的對象，此例子中是Button
+            (sender as Button).Text = DateTime.Now.ToString();
+        }
     }
 }
