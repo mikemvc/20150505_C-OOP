@@ -113,5 +113,14 @@ namespace loopDemo
                 listBox1.Items.Add(i + 1);
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("*");
+            listBox1.Items.Add("**");
+            listBox1.Items.Add("***");
+            listBox1.Items.Add("****");
+            listBox1.Items.Add("*****");
+        }
     }
 }
