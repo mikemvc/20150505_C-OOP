@@ -26,9 +26,14 @@ namespace loopDemo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            listBox1.Items[0] = "AAA";
-            listBox1.Items.Remove("C");
+            // 設定listBox1的第一個元素為AAA
+            //listBox1.Items[0] = "AAA";
+            
+            // 移除ListBox1中的C元素
+            //listBox1.Items.Remove("C");
 
+            //移除listBox1的第一個元素 (索引index從0開始)
+            if (listBox1.Items.Count > 0) listBox1.Items.RemoveAt(0);
         }
     }
 }
