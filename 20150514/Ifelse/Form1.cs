@@ -47,9 +47,9 @@ namespace Ifelse
 
             // 三元表示法
             // (true / false) ? xxx : yyy;
-            e.Cancel = (checkBox1.Checked) ? false : true;
+            //e.Cancel = (checkBox1.Checked) ? false : true;
 
-            
+            e.Cancel = !checkBox1.Checked;
         }
     }
 }
