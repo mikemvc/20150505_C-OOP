@@ -101,5 +101,17 @@ namespace loopDemo
             }
             button6.Text = result.ToString();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // 兩種寫法相等
+            //for (int i = 1; i <= 3; i++) {
+            //    listBox1.Items.Add(i);
+            //}
+            for (int i = 0; i < 3; i++)
+            {
+                listBox1.Items.Add(i + 1);
+            }
+        }
     }
 }
