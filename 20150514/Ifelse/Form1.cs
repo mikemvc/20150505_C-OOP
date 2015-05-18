@@ -57,5 +57,11 @@ namespace Ifelse
             // sender 是委派涵式所傳遞的對象，此例子中是Button
             (sender as Button).Text = DateTime.Now.ToString();
         }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // 將視窗標題設定為現在的座標
+            this.Text = string.Format("({0}, {1})", e.X, e.Y);
+        }
     }
 }
