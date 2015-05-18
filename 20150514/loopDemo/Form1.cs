@@ -28,12 +28,23 @@ namespace loopDemo
         {
             // 設定listBox1的第一個元素為AAA
             //listBox1.Items[0] = "AAA";
-            
+
             // 移除ListBox1中的C元素
             //listBox1.Items.Remove("C");
 
             //移除listBox1的第一個元素 (索引index從0開始)
             if (listBox1.Items.Count > 0) listBox1.Items.RemoveAt(0);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // for的變數i也可以設定在外面，但是不建議這麼做
+            int i = 1;
+            for (i = 1; i <= 9; i++)
+            {
+
+            }
+            button3.Text = i.ToString();
         }
     }
 }
