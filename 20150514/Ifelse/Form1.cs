@@ -66,14 +66,25 @@ namespace Ifelse
 
         private void button5_Click(object sender, EventArgs e)
         {
+            // 三個if的寫法
+            //if (rdoA.Checked)
+            //    button5.Text = "A";
+
+            //if (rdoB.Checked)
+            //    button5.Text = "B";
+
+            //if (rdoC.Checked)
+            //    button5.Text = "C";
+
+            // if else if的寫法
             if (rdoA.Checked)
                 button5.Text = "A";
-
-            if (rdoB.Checked)
+            else if (rdoB.Checked)
                 button5.Text = "B";
-
-            if (rdoC.Checked)
+            else if (rdoC.Checked)
                 button5.Text = "C";
+            else
+                button5.Text = "other";
         }
     }
 }
