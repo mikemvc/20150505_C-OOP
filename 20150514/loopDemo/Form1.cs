@@ -116,11 +116,22 @@ namespace loopDemo
 
         private void button8_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add("*");
-            listBox1.Items.Add("**");
-            listBox1.Items.Add("***");
-            listBox1.Items.Add("****");
-            listBox1.Items.Add("*****");
+            //listBox1.Items.Add("*");
+            //listBox1.Items.Add("**");
+            //listBox1.Items.Add("***");
+            //listBox1.Items.Add("****");
+            //listBox1.Items.Add("*****");
+            
+            // for loop --的寫法            
+            for (int i = 1; i<=5;i++)
+            {
+                string start = "";
+                for(int j = i;j> 0;j--)
+                {
+                    start += "*";
+                }
+                listBox1.Items.Add(start);
+            }
         }
     }
 }
