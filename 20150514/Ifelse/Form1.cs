@@ -77,14 +77,47 @@ namespace Ifelse
             //    button5.Text = "C";
 
             // if else if的寫法
-            if (rdoA.Checked)
-                button5.Text = "A";
-            else if (rdoB.Checked)
-                button5.Text = "B";
-            else if (rdoC.Checked)
-                button5.Text = "C";
-            else
-                button5.Text = "other";
+            //if (rdoA.Checked)
+            //    button5.Text = "A";
+            //else if (rdoB.Checked)
+            //    button5.Text = "B";
+            //else if (rdoC.Checked)
+            //    button5.Text = "C";
+            //else
+            //    button5.Text = "other";
+
+            // switch case的寫法
+            switch (iSelected)
+            {
+                case 0:
+                    button5.Text = "A";
+                    break;
+                case 1:
+                    button5.Text = "B";
+                    break;
+                case 2:
+                    button5.Text = "C";
+                    break;
+                default:
+                    button5.Text = "other";
+                    break;
+            }
+        }
+        int iSelected = -1;
+
+        private void rdoA_CheckedChanged(object sender, EventArgs e)
+        {
+            iSelected = 0;
+        }
+
+        private void rdoB_CheckedChanged(object sender, EventArgs e)
+        {
+            iSelected = 1;
+        }
+
+        private void rdoC_CheckedChanged(object sender, EventArgs e)
+        {
+            iSelected = 2;
         }
     }
 }

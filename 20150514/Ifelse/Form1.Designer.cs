@@ -115,6 +115,7 @@
             this.rdoC.TabStop = true;
             this.rdoC.Text = "C";
             this.rdoC.UseVisualStyleBackColor = true;
+            this.rdoC.CheckedChanged += new System.EventHandler(this.rdoC_CheckedChanged);
             // 
             // rdoB
             // 
@@ -126,6 +127,7 @@
             this.rdoB.TabStop = true;
             this.rdoB.Text = "B";
             this.rdoB.UseVisualStyleBackColor = true;
+            this.rdoB.CheckedChanged += new System.EventHandler(this.rdoB_CheckedChanged);
             // 
             // rdoA
             // 
@@ -137,6 +139,7 @@
             this.rdoA.TabStop = true;
             this.rdoA.Text = "A";
             this.rdoA.UseVisualStyleBackColor = true;
+            this.rdoA.CheckedChanged += new System.EventHandler(this.rdoA_CheckedChanged);
             // 
             // button5
             // 
