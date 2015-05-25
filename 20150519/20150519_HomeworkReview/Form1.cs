@@ -26,5 +26,20 @@ namespace _20150519_HomeworkReview
             button1.Text = s;
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int source = 9;
+            string result = "";
+
+            while (source > 0)
+            {
+                int x = source % 7;
+                result = x.ToString() + result;
+                source = source / 7;
+            }
+
+            button2.Text = result;
+        }
     }
 }
