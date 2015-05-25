@@ -28,6 +28,7 @@ namespace _20150519_Collections
             button1.Text = bag.Count.ToString();  // 3
             button1.Text = bag[1].ToString();  // Chien
 
+            bag.Remove("Chien");
         }
     }
 }
