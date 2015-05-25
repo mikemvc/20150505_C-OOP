@@ -25,8 +25,14 @@ namespace _20150519_Array
             //int i = 10;
 
             // 陣列宣告
-            int[] score;
-            score = new int[3];
+            //int[] score;
+            //score = new int[3];
+
+            int[] score = new int[3];  // 三個，編號分別是: 0, 1, 2
+
+            // score[3] = 100;  // System.IndexOutOfRangeException: 索引在陣列的界限之外。
+
+            button1.Text = score[0].ToString();  // 陣列的初值為「零值」
         }
     }
 }
