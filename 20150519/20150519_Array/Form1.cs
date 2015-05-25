@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -79,10 +80,22 @@ namespace _20150519_Array
             //}
 
             // 刪除陣列元素，最好從後面開始移除
-            int iCount = listBox1.Items.Count;
-            for (int i = iCount - 1; i >= 0; i--)
+            //int iCount = listBox1.Items.Count;
+            //for (int i = iCount - 1; i >= 0; i--)
+            //{
+            //    listBox1.Items.RemoveAt(i);
+            //}
+
+            // using System.Collections;
+            ArrayList col = new ArrayList();
+            col.Add(1);
+            col.Add(2);
+            col.Add(3);
+            col.Add(4);
+            foreach (object x in col)
             {
-                listBox1.Items.RemoveAt(i);
+                col[3] = 100;
+                listBox1.Items.Add(x);
             }
         }
     }
