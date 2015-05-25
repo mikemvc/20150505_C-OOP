@@ -91,5 +91,19 @@ namespace _20150519_Collections
 
             button4.Text = data2[2].ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TPoint[] data = new TPoint[] {
+                new TPoint() { X = 100, Y = 200 },
+                new TPoint() { X = 300, Y = 400 }
+            };
+            JavaScriptSerializer encoder = new JavaScriptSerializer();
+            string sJson = encoder.Serialize(data);
+            textBox1.Text = sJson;
+
+            TPoint[] data2 = encoder.Deserialize<TPoint[]>(sJson);
+            button5.Text = data2[1].X.ToString();
+        }
     }
 }
