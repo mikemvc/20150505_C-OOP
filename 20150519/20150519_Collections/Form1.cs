@@ -28,7 +28,15 @@ namespace _20150519_Collections
             button1.Text = bag.Count.ToString();  // 3
             button1.Text = bag[1].ToString();  // Chien
 
-            bag.Remove("Chien");
+            //bag.Remove("Chien");
+            int iFoundIdex = bag.IndexOf("Chien");  // 1, -1 if NOT FOUND
+            button1.Text = iFoundIdex.ToString();
+
+            if (iFoundIdex > 0)
+            {
+                bag.RemoveAt(iFoundIdex);
+            }
+            button1.Text = bag[1].ToString();
         }
     }
 }
