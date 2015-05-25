@@ -49,14 +49,23 @@ namespace _20150519_Array
         {
             int[] score = new int[] { 90, 91, 92, 93, 94, 95 };
 
-            int iTotal = 0;
-            for (int i = 0; i < score.Length; i++)
+            //int iTotal = 0;
+            //for (int i = 0; i < score.Length; i++)
+            //{
+            //    int x = score[i];
+            //    listBox1.Items.Add(x);
+            //    iTotal += x;
+            //}
+            //button3.Text = iTotal.ToString();
+            
+            // 使用foreach列出陣列的內容
+            listBox1.Items.Clear();
+            int i = 5;
+            foreach (int x in score)
             {
-                int x = score[i];
+                score[i] = 100;
                 listBox1.Items.Add(x);
-                iTotal += x;
             }
-            button3.Text = iTotal.ToString();
         }
     }
 }
