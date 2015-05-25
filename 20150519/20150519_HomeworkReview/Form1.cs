@@ -53,5 +53,25 @@ namespace _20150519_HomeworkReview
             // To any base:
             // http://stackoverflow.com/questions/923771/
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // *
+            // **
+            // ***
+            // ****
+            // *****
+
+            for (int iLine = 1; iLine <= 5; iLine++)
+            {
+                // listBox1.Items.Add(iLine);
+                string sStar = "";
+                for (int iStar = 1; iStar <= iLine; iStar++)
+                {
+                    sStar = sStar + "*";
+                }
+                listBox1.Items.Add(sStar);
+            }
+        }
     }
 }
