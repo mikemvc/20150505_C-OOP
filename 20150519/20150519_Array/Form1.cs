@@ -118,5 +118,14 @@ namespace _20150519_Array
 
             button5.Text = score.GetUpperBound(1).ToString(); // 2
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string[] sFormal = new string[] { "零", "壹", "貳", "參" };
+
+            int iNum = 3;
+
+            button6.Text = sFormal[iNum];
+        }
     }
 }
