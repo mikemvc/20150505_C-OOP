@@ -49,6 +49,9 @@ namespace _20150519_HomeworkReview
             // button3.Text = source.ToString();
             double d = source / 7f;
             button3.Text = d.ToString();
+
+            // To any base:
+            // http://stackoverflow.com/questions/923771/
         }
     }
 }
