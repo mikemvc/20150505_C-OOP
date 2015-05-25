@@ -79,5 +79,17 @@ namespace _20150519_Collections
             button3.Text = col2[2].GetType().ToString();
             // ???
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int[] data = new int[] { 0, 1, 2, 3, 4, 5, 6 };
+            JavaScriptSerializer encoder = new JavaScriptSerializer();
+            string sJson = encoder.Serialize(data);
+            textBox1.Text = sJson;
+
+            int[] data2 = encoder.Deserialize<int[]>(sJson);
+
+            button4.Text = data2[2].ToString();
+        }
     }
 }
