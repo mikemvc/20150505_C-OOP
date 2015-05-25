@@ -67,5 +67,23 @@ namespace _20150519_Array
                 listBox1.Items.Add(x);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // listBox1.Items.Clear();
+            // listBox1.Items.RemoveAt(2);
+
+            // ?!
+            //for (int i = 0; i < listBox1.Items.Count; i++) {
+            //    listBox1.Items.RemoveAt(i);
+            //}
+
+            // 刪除陣列元素，最好從後面開始移除
+            int iCount = listBox1.Items.Count;
+            for (int i = iCount - 1; i >= 0; i--)
+            {
+                listBox1.Items.RemoveAt(i);
+            }
+        }
     }
 }
