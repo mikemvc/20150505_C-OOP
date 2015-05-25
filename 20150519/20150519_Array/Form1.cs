@@ -107,9 +107,14 @@ namespace _20150519_Array
                                         { 71, 72, 73 } 
                                       };
 
-            button5.Text = score[0, 1].ToString();
-            button5.Text = score[1, 2].ToString();
+            //button5.Text = score[0, 1].ToString();
+            //button5.Text = score[1, 2].ToString();
 
+            button5.Text = score.Length.ToString();  // 12
+
+            button5.Text = score.GetLength(0).ToString();  // 4
+
+            button5.Text = score.GetLength(1).ToString();  // 3
         }
     }
 }
