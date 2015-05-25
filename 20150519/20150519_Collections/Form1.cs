@@ -38,5 +38,21 @@ namespace _20150519_Collections
             }
             button1.Text = bag[1].ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hashtable bag = new Hashtable();
+            bag["firstName"] = "Wolfgang";  // bag.Add("firstName", "Wolfgang");
+            button2.Text = bag["firstName"].ToString();
+
+            bag["firstName"] = "Richard";
+            button2.Text = bag["firstName"].ToString();
+
+            #region 參考用
+            // DataTable dt = ds.Tables["Products"];
+            // DataRow dr = dt.Rows[0]
+            // String sProdName = dr["ProductName"].ToString();
+            #endregion
+        }
     }
 }
