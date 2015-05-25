@@ -34,5 +34,15 @@ namespace _20150519_Array
 
             button1.Text = score[0].ToString();  // 陣列的初值為「零值」
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int[] score = new int[] { 90, 91, 92, 93, 94, 95 };
+
+            int iLastIndex = score.Length - 1;
+            this.Text = iLastIndex.ToString();
+
+            button2.Text = score[iLastIndex].ToString();
+        }
     }
 }
