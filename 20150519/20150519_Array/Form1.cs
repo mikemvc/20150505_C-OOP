@@ -16,5 +16,17 @@ namespace _20150519_Array
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // 變數宣告
+            //int i;
+            //i = 10;
+            //int i = 10;
+
+            // 陣列宣告
+            int[] score;
+            score = new int[3];
+        }
     }
 }
