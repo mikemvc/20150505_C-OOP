@@ -44,5 +44,19 @@ namespace _20150519_Array
 
             button2.Text = score[iLastIndex].ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int[] score = new int[] { 90, 91, 92, 93, 94, 95 };
+
+            int iTotal = 0;
+            for (int i = 0; i < score.Length; i++)
+            {
+                int x = score[i];
+                listBox1.Items.Add(x);
+                iTotal += x;
+            }
+            button3.Text = iTotal.ToString();
+        }
     }
 }
