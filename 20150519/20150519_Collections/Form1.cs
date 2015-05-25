@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace _20150519_Collections
@@ -53,6 +54,30 @@ namespace _20150519_Collections
             // DataRow dr = dt.Rows[0]
             // String sProdName = dr["ProductName"].ToString();
             #endregion
+        }
+
+        class TPoint
+        {
+            public int X;
+            public int Y;
+        }
+        // 1. 滑鼠右鍵點按「參考」, 勾選 System.Web.Extensions.dll
+        // 2. using System.Web.Script.Serialization;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TPoint pt = new TPoint() { X = 100, Y = 200 };
+            ArrayList col = new ArrayList();
+            col.Add(pt);
+            col.Add(new TPoint() { X = 300, Y = 400 });
+            col.Add(new TPoint() { X = 500, Y = 600 });
+
+            JavaScriptSerializer encoder = new JavaScriptSerializer();
+            string sJson = encoder.Serialize(col);
+            textBox1.Text = sJson;
+
+            ArrayList col2 = encoder.Deserialize<ArrayList>(sJson);
+            button3.Text = col2[2].GetType().ToString();
+            // ???
         }
     }
 }
