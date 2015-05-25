@@ -115,6 +115,8 @@ namespace _20150519_Array
             button5.Text = score.GetLength(0).ToString();  // 4
 
             button5.Text = score.GetLength(1).ToString();  // 3
+
+            button5.Text = score.GetUpperBound(1).ToString(); // 2
         }
     }
 }
