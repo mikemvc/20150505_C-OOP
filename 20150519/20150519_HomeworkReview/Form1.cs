@@ -41,5 +41,14 @@ namespace _20150519_HomeworkReview
 
             button2.Text = result;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int source = 9;
+            // source = source / 7;
+            // button3.Text = source.ToString();
+            double d = source / 7f;
+            button3.Text = d.ToString();
+        }
     }
 }
