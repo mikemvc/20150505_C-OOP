@@ -98,5 +98,18 @@ namespace _20150519_Array
                 listBox1.Items.Add(x);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int[,] score = new int[,] { { 100, 100, 100 }, 
+                                        { 91, 92, 93 }, 
+                                        { 81, 82, 83 }, 
+                                        { 71, 72, 73 } 
+                                      };
+
+            button5.Text = score[0, 1].ToString();
+            button5.Text = score[1, 2].ToString();
+
+        }
     }
 }
