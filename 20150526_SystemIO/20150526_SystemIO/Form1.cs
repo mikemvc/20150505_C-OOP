@@ -69,5 +69,21 @@ namespace _20150526_SystemIO
                 doWork(i);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string s = "notepad";
+            s = "http://www.hinet.net";
+            s = @"d:\temp\test.txt";
+            s = "notepader";
+            try
+            {
+                System.Diagnostics.Process.Start(s);
+            }
+            catch
+            {
+                button4.Text = "!";
+            }
+        }
     }
 }
