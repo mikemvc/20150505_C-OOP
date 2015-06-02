@@ -46,5 +46,28 @@ namespace _20150526_SystemIO
 
             this.Text = "Check point 3";
         }
+
+        void doWork(int value)
+        {
+            try
+            {
+                if (value == 4)
+                    throw new Exception("error");
+                listBox1.Items.Add(value);
+            }
+            catch
+            {
+                listBox1.Items.Add("ERROR!");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 1; i <= 9; i++)
+            {
+                doWork(i);
+            }
+        }
     }
 }
