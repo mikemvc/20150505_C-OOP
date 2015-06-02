@@ -155,5 +155,32 @@ namespace _20150526_SystemIO
 
             button9.Text = s2;
         }
+
+        /*
+
+        private void button7_Click(object sender, EventArgs e) {
+            string s = "ABC中文字";
+            byte[] buffer = System.Text.Encoding.ASCII.GetBytes(s);
+
+            FileStream fs = new FileStream(@"c:\temp\test.txt", FileMode.Create);
+            fs.Write(buffer, 0, buffer.Length);
+            fs.Close();
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e) {
+            string s = "ABC中文字";
+            // byte[] buffer = System.Text.Encoding.ASCII.GetBytes(s);  // ABC???
+            byte[] buffer = System.Text.Encoding.Unicode.GetBytes(s);
+
+            FileStream fs = new FileStream(@"c:\temp\test.txt", FileMode.Create);
+            // Byte order mark (BOM, 位元組順序記號)
+            fs.WriteByte(255); fs.WriteByte(254);
+            fs.Write(buffer, 0, buffer.Length);
+            fs.Close();
+            
+        }
+
+        */
     }
 }
