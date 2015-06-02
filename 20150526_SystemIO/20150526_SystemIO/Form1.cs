@@ -24,5 +24,13 @@ namespace _20150526_SystemIO
             Directory.CreateDirectory(@"C:\test123\test456\test789");
             button1.Text = "OK";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string sFolderName = @"C:\test123\test456";
+            if (Directory.Exists(sFolderName))
+                Directory.Delete(sFolderName);
+
+        }
     }
 }
