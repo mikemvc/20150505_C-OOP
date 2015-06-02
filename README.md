@@ -19,3 +19,8 @@ https://github.com/mikemvc/20150505_CSharpOOP/tree/20150512_DataType<br />
 https://github.com/mikemvc/20150505_CSharpOOP/tree/20150514_StringFormatAndLoop<br />
 課程重點:string.Format()的各種格式化方法，<br />
 for迴圈與while的使用<br />
+
+2015/05/16 CollectionsAndArray集合與陣列<br />
+https://github.com/mikemvc/20150505_CSharpOOP/tree/20150519_CollectionAndArray
+課程重點:陣列Array的設定與使用<br />
+集合Collection的操作與使用<br />
