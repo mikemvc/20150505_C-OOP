@@ -34,6 +34,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -87,7 +88,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(33, 375);
+            this.button5.Location = new System.Drawing.Point(33, 368);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(162, 47);
             this.button5.TabIndex = 6;
@@ -95,11 +96,22 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(33, 437);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(162, 45);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "GetProcesses";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 566);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.listBox1);
@@ -122,6 +134,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 

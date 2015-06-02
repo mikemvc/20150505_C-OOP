@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -100,6 +101,18 @@ namespace _20150526_SystemIO
             foreach (string sFilename in fileList)
             {
                 listBox1.Items.Add(sFilename);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            Process[] progList = System.Diagnostics.Process.GetProcesses();
+            foreach (Process p in progList)
+            {
+                if (p.ProcessName == "notepad")
+                    p.Kill();
+                listBox1.Items.Add(p.ProcessName);
             }
         }
     }
