@@ -91,11 +91,16 @@ namespace _20150526_SystemIO
             listBox1.Items.Clear();
 
             string[] fileList = Directory.GetFiles(@"d:\temp", "*.txt", SearchOption.AllDirectories);
-            for (int i = 0; i < fileList.Length; i++)
+            //for (int i = 0; i < fileList.Length; i++)
+            //{
+            //    string sFilename = fileList[i];
+            //    listBox1.Items.Add(sFilename);
+            //}
+            
+            foreach (string sFilename in fileList)
             {
-                string sFilename = fileList[i];
                 listBox1.Items.Add(sFilename);
-            }            
+            }
         }
     }
 }
