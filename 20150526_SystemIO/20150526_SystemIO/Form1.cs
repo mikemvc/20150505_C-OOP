@@ -28,9 +28,23 @@ namespace _20150526_SystemIO
         private void button2_Click(object sender, EventArgs e)
         {
             string sFolderName = @"C:\test123\test456";
-            if (Directory.Exists(sFolderName))
+            //if (Directory.Exists(sFolderName))
+            //    Directory.Delete(sFolderName);
+            
+            try
+            {
+                // do work
+                this.Text = "Check point 1";
                 Directory.Delete(sFolderName);
+                this.Text = "Check point 2";
+            }
+            catch
+            {
+                // on error!!!!!
+                button2.Text = "Error!";
+            }
 
+            this.Text = "Check point 3";
         }
     }
 }
