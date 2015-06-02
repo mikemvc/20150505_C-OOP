@@ -141,5 +141,19 @@ namespace _20150526_SystemIO
             string s = System.Text.Encoding.UTF8.GetString(buffer);
             button8.Text = s;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string s = "ABC中文字";
+            StreamWriter w = new StreamWriter(@"c:\temp\test.txt", false);
+            w.Write(s);
+            w.Close();
+
+            StreamReader r = new StreamReader(@"c:\temp\test.txt");
+            string s2 = r.ReadToEnd();
+            r.Close();
+
+            button9.Text = s2;
+        }
     }
 }
