@@ -129,5 +129,17 @@ namespace _20150526_SystemIO
             fs.Write(buffer, 0, buffer.Length);
             fs.Close();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream(@"c:\temp\test.txt", FileMode.Open);
+
+            byte[] buffer = new byte[fs.Length];
+            fs.Read(buffer, 0, (int)fs.Length);
+            fs.Close();
+
+            string s = System.Text.Encoding.UTF8.GetString(buffer);
+            button8.Text = s;
+        }
     }
 }
