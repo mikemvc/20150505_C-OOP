@@ -85,5 +85,17 @@ namespace _20150526_SystemIO
                 button4.Text = "!";
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            string[] fileList = Directory.GetFiles(@"d:\temp", "*.txt", SearchOption.AllDirectories);
+            for (int i = 0; i < fileList.Length; i++)
+            {
+                string sFilename = fileList[i];
+                listBox1.Items.Add(sFilename);
+            }            
+        }
     }
 }
