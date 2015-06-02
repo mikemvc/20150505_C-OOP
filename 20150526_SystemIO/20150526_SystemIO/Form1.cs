@@ -115,5 +115,19 @@ namespace _20150526_SystemIO
                 listBox1.Items.Add(p.ProcessName);
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string s = "ABC中文字";
+            // byte[] buffer = System.Text.Encoding.ASCII.GetBytes(s);  // ABC???
+            // byte[] buffer = System.Text.Encoding.Unicode.GetBytes(s);
+            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(s);
+            // System.Text.Encoding encoder = System.Text.Encoding.GetEncoding("Big5");
+            // byte[] buffer = encoder.GetBytes(s);
+
+            FileStream fs = new FileStream(@"c:\temp\test.txt", FileMode.Create);
+            fs.Write(buffer, 0, buffer.Length);
+            fs.Close();
+        }
     }
 }
