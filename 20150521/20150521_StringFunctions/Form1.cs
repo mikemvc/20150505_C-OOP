@@ -26,5 +26,13 @@ namespace _20150521_StringFunctions
             int iLength = s.Length;
             button1.Text = iLength.ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //                0 1 2 3 4 5
+            string sFormal = "零壹貳參肆伍...";
+            int iNum = 3;
+            button2.Text = sFormal.Substring(iNum, 1);
+        }
     }
 }
