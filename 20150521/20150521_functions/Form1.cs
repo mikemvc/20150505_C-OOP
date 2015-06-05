@@ -139,6 +139,17 @@ namespace _20150521_functions
             button4.Text = iCount.ToString();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // string sUserKeyin = textBox1.Text;
+            // int iTest = Convert.ToInt32(sUserKeyin);
+            // int iTest = (int)sUserKeyin;
 
+            int iTest;
+            if (int.TryParse(textBox1.Text, out iTest))
+                button5.Text = iTest.ToString();
+            else
+                button5.Text = "Wrong format";
+        }
     }
 }
