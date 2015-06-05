@@ -125,6 +125,20 @@ namespace _20150521_functions
             Test(ref iCount);
             button3.Text = iCount.ToString();
         }
-        
+
+        void Foo(out int iTest)
+        {
+            // MessageBox.Show(iTest.ToString()); // Compiler Error
+            iTest = 6;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int iCount = 3;
+            Foo(out iCount);
+            button4.Text = iCount.ToString();
+        }
+
+
     }
 }
