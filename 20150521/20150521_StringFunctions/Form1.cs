@@ -56,5 +56,12 @@ namespace _20150521_StringFunctions
             iPosition = s.IndexOf("ABCD"); // -1 ==> not found
             button4.Text = iPosition.ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string s = "123ABC123abc1234ABCxxx";
+            // button5.Text = s.Replace("ABC", "-");
+            button5.Text = s.Replace("ABC", "");
+        }
     }
 }
