@@ -80,5 +80,24 @@ namespace _20150521_MyPassword
                 listBox1.Items.Add(sLine);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string sPool = "0123456789a88888888888bcdefghijkmnpqrstuvwxyz";
+            Random dice = new Random(100);
+
+            // int iDice = dice.Next(0, sPool.Length);  // 0..44
+            //listBox1.Items.Add(sPool.Length); // 45
+            //listBox1.Items.Add(iDice);  // 43
+            //listBox1.Items.Add(sPool.Substring(iDice, 1));
+            string sLine = "";
+            for (int iColumn = 1; iColumn <= 10; iColumn++)
+            {
+                int iDice = dice.Next(0, sPool.Length);
+                sLine = sLine + sPool.Substring(iDice, 1);
+            }
+
+            button4.Text = sLine;
+        }
     }
 }
