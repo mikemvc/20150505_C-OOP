@@ -44,5 +44,17 @@ namespace _20150521_StringFunctions
 
             button3.Text = (iTh + 10000).ToString().Substring(1, 4);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //                    1         2         3
+            //          01234567890123456789012345678901234567890
+            string s = "123ABC123abc1234ABCxxx";
+            int iPosition = s.IndexOf("ABC");// 3
+            // iPosition = s.IndexOf("ABC", iPosition + 1); // 16
+            // iPosition = s.IndexOf("ABC", iPosition + 1, StringComparison.OrdinalIgnoreCase);  // 9
+            iPosition = s.IndexOf("ABCD"); // -1 ==> not found
+            button4.Text = iPosition.ToString();
+        }
     }
 }
