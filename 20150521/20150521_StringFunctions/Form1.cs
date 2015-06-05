@@ -34,5 +34,15 @@ namespace _20150521_StringFunctions
             int iNum = 3;
             button2.Text = sFormal.Substring(iNum, 1);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // yyyyMMddnnnn  201505210003
+            int iTh = 3;
+
+            // button3.Text = String.Format("{0:D4}", iTh);
+
+            button3.Text = (iTh + 10000).ToString().Substring(1, 4);
+        }
     }
 }
