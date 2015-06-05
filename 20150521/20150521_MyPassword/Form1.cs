@@ -25,5 +25,30 @@ namespace _20150521_MyPassword
                 listBox1.Items.Add(dice.Next(0, 10));
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int iSeed;
+            if (!int.TryParse(txtSeed.Text, out iSeed))
+            {
+                button2.Text = "Pleaes keyin a number.";
+                return;
+            }
+
+            Random dice = new Random(iSeed);
+            int iHowmanyLine = 8;
+            int iHowmanyColumn = 10;
+
+            for (int iLine = 1; iLine <= iHowmanyLine; iLine++)
+            {
+                string sLine = "";
+                for (int iCol = 1; iCol <= iHowmanyColumn; iCol++)
+                {
+                    int iDice = dice.Next(0, 10);
+                    sLine += iDice.ToString();
+                }
+                listBox1.Items.Add(sLine);
+            }
+        }
     }
 }

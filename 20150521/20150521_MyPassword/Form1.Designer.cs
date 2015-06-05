@@ -30,6 +30,8 @@
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtSeed = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -52,11 +54,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(308, 140);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 43);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtSeed
+            // 
+            this.txtSeed.Location = new System.Drawing.Point(308, 212);
+            this.txtSeed.Name = "txtSeed";
+            this.txtSeed.Size = new System.Drawing.Size(195, 29);
+            this.txtSeed.TabIndex = 5;
+            this.txtSeed.Text = "1234";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 626);
+            this.Controls.Add(this.txtSeed);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -64,6 +86,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +94,8 @@
 
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtSeed;
     }
 }
 
