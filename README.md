@@ -25,7 +25,7 @@ https://github.com/mikemvc/20150505_CSharpOOP/tree/20150519_CollectionAndArray<b
 課程重點:陣列Array的設定與使用<br />
 集合Collection的操作與使用<br />
 
-2015/05/19 stringFunction與自訂的functions涵式<br />
+2015/05/21 stringFunction與自訂的functions涵式<br />
 https://github.com/mikemvc/20150505_CSharpOOP/tree/20150521_functions<br />
 課程重點:string本身的涵式的使用，<br />
 以及自訂涵式的方法與使用<br />
