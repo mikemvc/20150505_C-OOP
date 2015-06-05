@@ -110,6 +110,21 @@ namespace _20150521_functions
             ShowStar(iCount);
         }
 
+        // void Test(int iHowMany) {  iHowMany = 3
+        // void Test(ref int iHowMany) { iHowMany = (at)iCount; iHowMany->
+        void Test(ref int iHowMany)
+        {
+            MessageBox.Show(iHowMany.ToString());
+            // ...
+            iHowMany = 6;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int iCount = 3;
+            Test(ref iCount);
+            button3.Text = iCount.ToString();
+        }
         
     }
 }
