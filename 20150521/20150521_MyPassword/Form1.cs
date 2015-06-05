@@ -50,5 +50,35 @@ namespace _20150521_MyPassword
                 listBox1.Items.Add(sLine);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            int iSeed;
+            if (!int.TryParse(txtSeed.Text, out iSeed))
+            {
+                button2.Text = "Pleaes keyin a number.";
+                return;
+            }
+
+
+            Random dice = new Random(iSeed);
+            int iHowmanyLine = 8;
+            int iHowmanyColumn = 10;
+            string sPool = "0123456789a88888888888bcdefghijkmnpqrstuvwxyz";
+            //              0123456789012345678901234567890123456789
+            //                        1         2         3    
+            for (int iLine = 1; iLine <= iHowmanyLine; iLine++)
+            {
+                string sLine = "";
+                for (int iCol = 1; iCol <= iHowmanyColumn; iCol++)
+                {
+                    int iDice = dice.Next(0, sPool.Length);
+                    sLine += sPool.Substring(iDice, 1);
+                }
+                listBox1.Items.Add(sLine);
+            }
+        }
     }
 }
