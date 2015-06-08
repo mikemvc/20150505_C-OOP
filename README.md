@@ -35,3 +35,7 @@ https://github.com/mikemvc/20150505_CSharpOOP/tree/20150526_SystemIO<br />
 課程重點:SystemIO內的方法，<br />
 檔案讀寫，與資料夾的建立等等<br />
 
+2015/05/28 程式實作<br />
+https://github.com/mikemvc/20150505_CSharpOOP/tree/20150528_TSQLBuilder<br />
+課程重點:第一階段的學習成果應用，自選題目的程式實作，<br />
+撰寫的題目是資料庫語法產生器(TSQL的CRUD)<br />
